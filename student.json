@@ -1,22 +1,19 @@
 {
-"first name": "vinay nani",
-"Last name": "payyavula",
- "addresess": [
-    
+  "first_name": "vinay nani",
+  "last_name": "payyavula",
+  "addresses": [
     {
-       "type": "perminent",
-       "street": "102",
-       "apartment": "abc aprt",
-       "pincode": "500059"
-
-    }
-    
+      "type": "permanent",
+      "street": "102",
+      "apartment": "abc aprt",
+      "pincode": "500059"
+    },
     {
-      "type": "tem",
+      "type": "temporary",
       "street": "105",
-        "app": "xyz app"     
-
+      "apartment": "xyz app",
+      "pincode": "500059"
     }
- ]
-
+   
+  ]
 }
