@@ -1,0 +1,4 @@
+ -  name: ping the surver
+    hosts: frontend    ## target the surver
+    tasks:
+    
