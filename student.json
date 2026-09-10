@@ -1,0 +1,22 @@
+{
+"first name": "vinay nani",
+"Last name": "payyavula",
+ "addresess": [
+    
+    {
+       "type": "perminent",
+       "street": "102",
+       "apartment": "abc aprt",
+       "pincode": "500059"
+
+    }
+    
+    {
+      "type": "tem",
+      "street": "105",
+        "app": "xyz app"     
+
+    }
+ ]
+
+}
