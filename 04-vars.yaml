@@ -1,0 +1,12 @@
+---
+- name: demo on variables
+  hosts: local
+  become: true
+  vars:
+    course: devops
+    duration: 4 months
+    fee: 3000
+    
+  tasks:
+   - debug:
+      msg: hi  iam learnig {{course}}, period of {{duration}}, 4 months. 
