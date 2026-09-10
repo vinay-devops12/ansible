@@ -1,6 +1,6 @@
 ---
 - name: demo on variables
-  hosts: local
+  hosts: localhost
   become: true
   vars:
     course: devops
