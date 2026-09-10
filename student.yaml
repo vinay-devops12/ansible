@@ -1,0 +1,15 @@
+---
+name: "vinaynani"
+dob: "1900-01-01"
+mobile: "1234565"
+addresses:
+  - type: "permanent"
+    street: "1053"
+    apartment: "abc"
+    pincode: "500059"
+
+  - type: "temporary"
+    street: "1223"
+    apartment: "xyz"
+    pincode: "505303"
+# yaml format
