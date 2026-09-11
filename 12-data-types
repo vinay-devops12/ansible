@@ -1,27 +1,27 @@
 
 ---
 - name: course information
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
    course: "devops and aiops"  ## string
-   duration-in_hrs: 150  ## int
+   duration_in_hrs: 150  ## int
    is_it_live: true  ## bollen
    topics:
-    linux
-    shell
-    ansible
-    git
-   more_datails:
+    - linux
+    - shell
+    - ansible
+    - git
+   more_details::
     month: 5   ## map
     trainer: vinay  
   tasks:
    - name: print information  
      debug:
       msg:
-       name: {{ course }}
-       duration: {{ duration-in_hrs }}
-       live: {{ is_it_live }}
-       topics: {{ topics }}
-       more_datails: {{ more_datails }}
+       name: "{{ course }}""
+       duration: "{{ duration-in_hrs }}"
+       live: "{{ is_it_live }}"
+       topics: "{{ topics }}"
+       more_details:: "{{ more_details: }}"
 
