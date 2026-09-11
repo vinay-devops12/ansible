@@ -3,12 +3,12 @@
   hosts: localhost
   connection: local
   vars:
-    COURSE: "ansible"
+    COURSE: "ansible"  ## parent
     TRAINER: "vinay"
     DURATION: "150 HOURS"
   tasks:
     - name: print information
       vars:
-        COURSE: "devops with aiops"
+        COURSE: "devops with aiops"  ## child  over ride
       ansible.builtin.debug:
         msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}."
