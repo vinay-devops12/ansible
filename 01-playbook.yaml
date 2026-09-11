@@ -1,4 +1,4 @@
  -  name: ping the surver
-    hosts: frontend   ## target the surver
+    hosts: localhost   ## target the surver
     tasks:
     
