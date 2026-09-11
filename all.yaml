@@ -1,1 +1,6 @@
 COMMON_KEY: "common-value"
+
+COURSE: "ansible from group-vars"
+TRAINER: "vinay"
+DURATION: "150 hours"
+
