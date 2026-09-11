@@ -1,5 +1,5 @@
 - name: demo on vars_files
-  hosts: localhost
+  hosts: local
   connection: local
   vars_files:
    - course_yaml: 
