@@ -11,16 +11,16 @@
     - shell
     - ansible
     - git
-   more_details::
+   more_details:
     month: 5   ## map
     trainer: vinay  
   tasks:
    - name: print information  
-     debug:
+     ansible.builtin.debug:
       msg:
        name: "{{ course }}"
-       duration: "{{ duration-in_hrs }}"
+       duration: "{{ duration_in_hrs }}"
        live: "{{ is_it_live }}"
        topics: "{{ topics }}"
-       more_details:: "{{ more_details: }}"
+       more_details: "{{ more_details }}"
 
