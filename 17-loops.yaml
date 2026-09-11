@@ -1,13 +1,13 @@
+---
 - name: install packages
   hosts: frontend
-  becomes: true
+  become: true
   tasks:
-   - name: install packages
-     package: 
-      - name: {{  item }}  ## loops  like reseved special variable
+    - name: install packages using loop
+      ansible.builtin.package:
+        name: "{{ item }}"
         state: present
-     loop:
-      - nginx
-      - mysql
-      - mongodb
-      - git   
+      loop:
+        - nginx
+        - mysql
+        - git
