@@ -1,0 +1,13 @@
+- name: install packages
+  hosts: frontend
+  becomes: true
+  tasks:
+   - name: install packages
+     package: 
+      - name: {{  item }}  ## loops  like reseved special variable
+        state: present
+     loop:
+      - nginx
+      - mysql
+      - mongodb
+      - git   
