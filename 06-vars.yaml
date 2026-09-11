@@ -1,11 +1,9 @@
 - name: demo on vars_files
-  hosts: local
+  hosts: localhost
   connection: local
   vars_files:
-   - course.yaml: 
+    - course.yaml
   tasks:
-   - name: print variables information
-     debug:
-       msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}."
-      
-   
+    - name: print variables information
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}."
