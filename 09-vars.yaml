@@ -5,4 +5,4 @@
   tasks:
   - name: print information
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}, common-key: {{ COMMON_KEY }}
+      msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}, common-key: {{ COMMON_KEY }}"
