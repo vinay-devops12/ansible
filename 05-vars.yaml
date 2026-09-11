@@ -1,0 +1,14 @@
+-  name: task level varaibles
+   host: local 
+   connection: local
+   vars:
+    COURSE: "ansible"
+    TRAINER: "vinay"
+    DURATION: "150 HOURS"
+   tasks:
+    - name: print inforamtion
+      vars:
+       COURSE: "devops with aiops"
+      dubug:
+       msg: "hi iam learning {{COURSE}, trainer is a {{ TRAINER}}, duration of {{DURATION}}
+
