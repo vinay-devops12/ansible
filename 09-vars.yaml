@@ -1,9 +1,8 @@
 ---
 - name: demo on inventory variable
-  hosts: localhost
+  hosts: frontend
   # connection: local
   tasks:
-   -course.yaml
-     - name: print information
-      ansible.builtin.debug:
-        msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}, common-key: {{ COMMON_KEY }}"
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{ COURSE }}. The trainer is {{ TRAINER }} and the duration is {{ DURATION }}, common-key: {{ COMMON_KEY }}
