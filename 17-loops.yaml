@@ -1,6 +1,7 @@
 ---
 - name: install packages
-  hosts: frontend
+  hosts: localhost
+  connection: local
   become: true
   tasks:
     - name: install packages using loop
