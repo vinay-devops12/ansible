@@ -1,5 +1,4 @@
 
----
 - name: course information
   hosts: localhost
   connection: local
@@ -19,7 +18,7 @@
    - name: print information  
      debug:
       msg:
-       name: "{{ course }}""
+       name: "{{ course }}"
        duration: "{{ duration-in_hrs }}"
        live: "{{ is_it_live }}"
        topics: "{{ topics }}"
