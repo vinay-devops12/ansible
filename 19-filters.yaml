@@ -1,9 +1,10 @@
+---
 - name: demo on filter
-  hosts: local
+  hosts: localhost
   connection: local
-  var:
-   topics: linux, ansible, shell, terraform
-  tasks: 
-   - name: convert to list
-     debug:
-      msg: "{{ topics |split (',')}}"
+  vars:
+    topics: "linux, ansible, shell, terraform"
+  tasks:
+    - name: convert to list
+      ansible.builtin.debug:
+        msg: "{{ topics | split(',') }}"
