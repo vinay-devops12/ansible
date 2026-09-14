@@ -1,0 +1,6 @@
+- name: shell vs command
+  hosts: localhosts
+  connection: local
+  vars:
+   - name: command test
+     command: cat/etc/passwd | grep root
