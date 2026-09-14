@@ -1,0 +1,9 @@
+- name: demo on filter
+  hosts: local
+  connection: local
+  var:
+   topics: linux, ansible, shell, terraform
+  tasks: 
+   - name: convert to list
+     debug:
+      msg: "{{ topics |split (',')}}"
