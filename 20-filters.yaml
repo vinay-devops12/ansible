@@ -1,0 +1,15 @@
+---
+- name: demo on filter
+  hosts: localhost
+  connection: local
+  vars:
+    topics:
+      - linux
+      - ansible
+      - shell
+      - terraform
+
+  tasks:
+    - name: convert list to string
+      ansible.builtin.debug:
+        msg: "{{ topics | join(', ') }}"
