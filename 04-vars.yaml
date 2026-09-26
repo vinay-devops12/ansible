@@ -4,7 +4,7 @@
   become: true
   vars:
     course: devops
-    duration: 4 months
+    duration: 4 monthss
     fee: 3000
     
   tasks:
